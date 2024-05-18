@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Moon Text Format",
+  "description": "Moon Text Format!",
+  "version": "0.0.1",
+  "icons": {},
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": ["contextMenus", "tabs", "storage"]
+}
